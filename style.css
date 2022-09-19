@@ -3,16 +3,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #dddddd;
+    background-color: #606060;
     color: rgba(0, 0, 0, 1);
 
 }
 
 div#interface {
     width: 1150px;
-    background-color: #ffff;
+    background-color: #ffffff;
     margin: -20px auto 0px auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
     padding: 10px;
 }
 
@@ -22,15 +22,13 @@ p {
 }
 
 a {
-    color: #606060 
-    text-decoration:none;
+    color: #606060;
+    text-decoration: none;
 }
 
-a :hover {
+a:hover {
     text-decoration: underline;
 }
-
-
 
 header#cabecalho img#icone {
     position: absolute;
@@ -50,7 +48,7 @@ header#cabecalho h1 {
     font-family: Arial, sans-serif;
     font-size: 50px;
     color: #606060;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
     padding: 0px;
     margin-bottom: 0px;
 
@@ -58,8 +56,8 @@ header#cabecalho h1 {
 
 header#cabecalho h2 {
     font-family: Arial, sans-serif;
-    color: #8888;
-    font-size: 30pt;
+    color: #888888;
+    font-size: 25pt;
     padding: 0;
     margin-top: 0px;
 }
@@ -88,9 +86,10 @@ figure.foto-legenda figcaption {
     padding: 10px;
     box-sizing: border-box;
 
+
 }
 
-figure.foto-legend :hover figcaption {
+figure.foto-legenda:hover figcaption {
     opacity: 1;
 }
 
@@ -110,7 +109,7 @@ nav#menu ul {
 
 nav#menu li {
     display: inline-block;
-    background-color: #dddd;
+    background-color: #dddddd;
     padding: 10px;
     margin: 2px;
     transition: 1s;
@@ -134,7 +133,7 @@ nav#menu a {
 }
 
 nav#menu a:hover {
-    color: #ffff;
+    color: #ffffff;
     text-decoration: underline;
 }
 
@@ -142,13 +141,12 @@ section#corpo {
     display: block;
     width: 560px;
     float: left;
-    ;
     border-right: 1px solid #606060;
     padding-right: 15px;
 }
 
 article#noticia-principal h2 {
-    font-size: 13pt;
+    font-size: 12pt;
     color: #606060;
     background-color: #dddddd;
     padding: 5px 0px 5px 10px;
@@ -156,31 +154,32 @@ article#noticia-principal h2 {
 
 }
 
-header#cabacalho-artigo h1 {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
+header#cabecalho-artigo h1{
+    font-family:Arial, sans-serif;
+    font-size: 25px;
     color: #606060;
     margin-bottom: 0px;
-    margin-top: 0px;
+    margin-top: 1px;
 }
 
 .direita {
     text-align: right;
 }
 
-header#cabacalho-artigoh h2 {
-    font-size: 13px;
-    color: #cecece;
+header#cabecalho-artigo h2 {
+    font-size: 15px;
+    color: #606060;
     background-color: #ffffff;
     margin: 0px;
 }
 
-header#cabacalho-artigoh h3 {
-    font-size: 12pc;
+header#cabecalho-artigo h3 {
+    font-size: 12pt;
     color: #606060;
 
 }
 
+/*aqui começa a tabela*/
 
 table#tabelaspec {
     border: 1px solid #606060;
@@ -188,6 +187,7 @@ table#tabelaspec {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 table#tabelaspec td {
     border: 1px solid #606060;
@@ -209,12 +209,12 @@ table#tabelaspec td.cd {
 }
 
 table#tabelaspec caption {
-    color: #606060;
+    color: #888888;
     font-size: 15pt;
     font-weight: bolder;
 }
 
-table#tabelaspec caption samp {
+table#tabelaspec caption span {
     display: block;
     float: right;
     color: #000000;
@@ -222,29 +222,33 @@ table#tabelaspec caption samp {
     margin-top: 10px;
 }
 
+/**/
 aside#lateral {
     display: block;
     width: 550px;
     float: right;
     background-color: #dddddd;
     padding: 10px;
-    margin-top: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5 );
+    margin-top: 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
-aside#lateral h1{
-    font-family: Arial,  sans-serif;
+
+aside#lateral h1 {
+    font-family:Arial, sans-serif;
     font-size: 20pt;
     color: #606060;
     margin-top: 0px;
-    
+
 }
-aside#lateral h2{
+
+aside#lateral h2 {
     background-color: #606060;
     font-size: 13pt;
     color: #ffffff;
     padding: 5px;
 }
 
+/*aqui começa o rodapé */
 footer#rodape {
     clear: both;
     border-top: 1px solid #606060;
