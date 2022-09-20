@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="midia.css">
+
+    <title>Multimídia</title>
+
+
+</head>
+<script language="javascript" src="funcoes.js"></script>
+
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2> A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icone" src="img/multimidia.png" alt="">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+
+                <ul>
+                    <li onmouseover="mudaFoto('img/home.png')" onmouseout="mudaFoto('img/multimidia.png')"><a
+                            href="index.html"></a>Home</li>
+                    <li onmouseover="mudaFoto('img/especificacoes.png')" onmouseout="mudaFoto('img/multimidia.png')"><a
+                            href="spcs.html"></a>Especificações</li>
+                    <li onmouseover="mudaFoto('img/fotos.png')" onmouseout="mudaFoto('img/multimidia.png')"><a
+                            href="fotos.html"></a>Fotos</li>
+                    <li onmouseover="mudaFoto('img/multimidia.png')" onmouseout="mudaFoto('img/multimidia.png')"><a
+                            href="multimidia.html"></a>Multimídia</li>
+                    <li onmouseover="mudaFoto('img/contato.png')" onmouseout="mudaFoto('img/multimidia.png')"><a
+                            href="fale-conosco.html"></a>Fale conosco</li>
+                </ul>
+            </nav>
+        </header>
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header>
+                    <hgroup>
+                        <h3>Glass > Multimídia</h3>
+                        <h1>Sons e Videos</h1>
+                        <h2>por Daniel Santos</h2>
+                        <h3 class="direita">Atualizado em 19/Setembro/2022</h3>
+                    </hgroup>
+
+                </header>
+
+          <div id="tv-radio">
+            <audio id="mucica" controls="controls">
+            <source src="_media/07LoversCarvings.oggvorbis.ogg" type="audio/mpeg"></audio>
+                <source src="media/2009-lovers-carvings-bicio.m4a_" type="audio/x-aac">
+                <source src="media/2009-lovers-carvings-bicio.ogg" type="audio/ogg">
+                
+            </audio >
+            <video id="filme" controls="controls" poster="img/video-mini03.jpg">
+                <source src="_media/gettin-star.mp4" type="vidio">
+                <source src="_media/gettin-started.webm" type="vidio/webm">
+                <source src="_media/gettin-started.ogv" type="video/ogg">
+        
+            </video>
+
+
+          </div>
+            </article>
+        </section>
+        <footer id="rodape">
+            <p>Copyright 2022 - by Daniel Santos<br>
+                <a href="https://www.facebook.com/daniel.santospereiralira" target="_blank"> Facebook</a> | <a
+                    href="https://www.instagram.com/santospereiralira/" target="_blank">Instagram</a>
+            </p>
+        </footer>
+
+
+</body>
+
+</html>
