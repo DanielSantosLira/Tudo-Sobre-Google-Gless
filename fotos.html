@@ -1,12 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fotos.css">
+
+    <title>Fotos Google Glass</title>
+
+
 </head>
+<script language="javascript" src="funcoes.js"></script>
+
+
+
 <body>
-    
+    <div id="interface">
+        <header id="cabecalho">
+
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2> A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icone" src="img/fotos.png" alt="">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+
+                <ul>
+                    <li onmouseover="mudaFoto('img/home.png')" onmouseout="mudaFoto('img/fotos.png')"><a
+                            href="index.html"></a>Home</li>
+                    <li onmouseover="mudaFoto('img/especificacoes.png')" onmouseout="mudaFoto('img/fotos.png')"><a
+                            href="spcs.html"></a>Especificações</li>
+                    <li onmouseover="mudaFoto('img/fotos.png')" onmouseout="mudaFoto('img/fotos.png')"><a
+                            href="fotos.html"></a>Fotos</li>
+                    <li onmouseover="mudaFoto('img/multimidia.png')" onmouseout="mudaFoto('img/fotos.png')"><a
+                            href="multimidia.html"></a>Multimídia</li>
+                    <li onmouseover="mudaFoto('img/contato.png')" onmouseout="mudaFoto('img/fotos.png')"><a
+                            href="fale-conosco.html"></a>Fale conosco</li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header>
+                    <hgroup>
+                        <h3> Glass > Foto</h3>
+                        <h1>Gleria de Imagens do Google Glass</h1>
+                        <h2>por Daniel Santos</h2>
+                        <h3 id="direita">Atualizado em 19/Setembro/2022</h3>
+                    </hgroup>
+                </header>
+
+                <p> Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais
+                    características do Google Glass, como recursos e propriedades que estão impressionando o mundo
+                    inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve
+                    descrição.</p>
+                <ul id="album-fotos">
+                    <li id="foto01"><span>Agenda e lembretes</span></li>
+                    <li id="foto02"><span>Sergey Brin usando o Glass</span</li>
+                    <li id="foto03"><span>Leve e compacto</span></li>
+                    <li id="foto04"><span>Sensação de uma tela de 50"</span></li>
+                    <li id="foto05"><span>Vários tipos de lente</span></li>
+                    <li id="foto06"><span> Informações importantes</span></li>
+
+                </ul>
+                <footer id="rodape">
+                    <p>Copyright 2022 - by Daniel Santos<br>
+                        <a href="https://www.facebook.com/daniel.santospereiralira" target="_blank"> Facebook</a> | <a
+                            href="https://www.instagram.com/santospereiralira/" target="_blank">Instagram</a>
+                    </p>
+                </footer>
+
+
 </body>
+
 </html>
