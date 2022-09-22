@@ -1,47 +1,138 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br">
 
-[AQUI ENTRA UMA FOTO]
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forme.css">
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
-
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+    <title>Formulário de Cadastro</title>
 
 
-[BOTÃO ENVIAR]
+</head>
+<script language="javascript" src="funcoes.js"></script>
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2> A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icone" src="img/contato.png" alt="">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+
+                <ul>
+                    <li onmouseover="mudaFoto('img/home.png')" onmouseout="mudaFoto('img/contato.png')"><a
+                            href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('img/especificacoes.png')" onmouseout="mudaFoto('img/contato.png')"><a
+                            href="spcs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('img/fotos.png')" onmouseout="mudaFoto('img/contato.png')"><a
+                            href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('img/multimidia.png')" onmouseout="mudaFoto('img/contato.png')"><a
+                            href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('img/contato.png')" onmouseout="mudaFoto('img/contato.png')"><a
+                            href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header>
+                    <hgroup>
+                        <h3> Fale Conosco > Contato</h3>
+                        <h1>Formulário de Contato</h1>
+                        <h2>por Daniel Santos</h2>
+                        <h3 id="direita">Atualizado em 19/Setembro/2022</h3>
+                    </hgroup>
+                </header>
+
+                <form method="post" id="fContatos" action="mailto:danielsplira@gmail.com">
+                    <fieldset id="usuario">
+                        <legend> Identificação do Usuário</legend>
+                        <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20"
+                                maxlength="30" placeholder="Nome Completo"> </p>
+                        <p> <label for="cSenha"> Senha:</label><input type="password" name="tSenha" id="cSenha" size="8"
+                                maxlength="8" placeholder="password"></p>
+                        <p> <label for="cEmail"> E-mail:</label><input type="email" name="tEmail" id="cEmail" size="20"
+                                maxlength="40" placeholder="E-mail"></p>
+
+                        <fieldset id="Sexo">
+                            <legend>Sexo</legend>
+                            <input type="radio" name="tSexo" id="cMac" checked><label for="cMac">Masculino</label><br>
+                            <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
+                        </fieldset>
+                        <p>Data de Nascimento: <input type="date" name="tNasc" id="cNasc"></p>
+                    </fieldset>
+                    <fieldset id="endereco">
+                        <legend> Endereço do Usuário</legend>
+                        <p><label> Logradouro:</label><input type="text" name="TRua" id="cRua" size="13" maxlength="80"
+                                placeholder="Rua, Av, Trav...."></p>
+                        <p><label>Número:</label><input type="namber" name="tNum" id="cNum" min="0" max="99999"></p>
+                        <p><label for="cEst"> Estado:</label>
+                            <select name="tEst" id="cEst">
+                                <OPtgroup label="Região Sudeste">
+                                    <option value="RJ">Rio de Janariro</option>
+                                    <option value="SP" selected>São Paulo</option>
+                                    <option value="MG">Minas Gerais</option>
+                                </OPtgroup>
+                                <OPtgroup label="Região Nordeste">
+                                    <option value="AL">Alagoas</option>
+                                    <option value="PB">Pernambuco</option>
+                                </OPtgroup>
+                                <OPtgroup label="Região Sul">
+                                    <option value="PR">Paraná</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                </OPtgroup>
+                        </p>
+                        </select>
+                        <p><label for="cCid"> Cidade:</label>
+                            <input type="text" name="tCid" id="cCdi" maxlength="40" size="20" placeholder="Sua Cidade"
+                                list="cidades">
+                        </p>
+                        <datalist id="cidades">
+                            <option value="Rio de Janeiro"></option>
+                            <option value="Nova Iguaçu"></option>
+                            <option value="Niterói"></option>
+                            <option value="Belfo Roxo"></option>
+                        </datalist>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="mensagem"> Mensagem do Usuário</legend>
+                        <p><label for="cUrg">Grau de Urgência:</label>
+                       Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Max</p>
+                        <p><label for="cMeg">Mensagem:</label>
+                        <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagen"></textarea></p>
+
+
+                    </fieldset>
+                    <fieldset id="pedido">
+                        <legend> Quero um Google Glass</legend>
+                        <p><label for="cPed"> Gostaria de adquirir um Google Glass quando disponível</label></p>
+                        <p><label for="cCor"> Cor:</label></p>
+                        <p><label for="cQtd">Quantidade:</label></p>
+                        <p><label for="cTot" Preço Total: R$</label></p>
+
+
+                    </fieldset>
+                    <img src="img/botao-enviar.png" alt="">
+                </form>
+            </article>
+        </section>
+        <footer id="rodape">
+            <p>Copyright 2022 - by Daniel Santos<br>
+                <a href="https://www.facebook.com/daniel.santospereiralira" target="_blank"> Facebook</a> | <a
+                    href="https://www.instagram.com/santospereiralira/" target="_blank">Instagram</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
