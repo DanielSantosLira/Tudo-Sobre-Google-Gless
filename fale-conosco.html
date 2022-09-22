@@ -6,13 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="forme.css">
+    <link rel="stylesheet" href="form.css">
+    <script language="javascript" src="funcoes.js"></script>
+    <script>
+        function calc_total() {
+            var qtd = parseInt (document.getElementById('cQtd').value);
+            tot = qtd * 1500;
+            document.getElementById('cTot').value = tot;
+        }
+    </script>
 
     <title>Formulário de Cadastro</title>
 
 
 </head>
-<script language="javascript" src="funcoes.js"></script>
+
 
 <body>
     <div id="interface">
@@ -43,16 +51,16 @@
 
         <section id="corpo-full">
             <article id="noticia-principal">
-                <header>
+                <header id="cabecalho-artigo">
                     <hgroup>
                         <h3> Fale Conosco > Contato</h3>
                         <h1>Formulário de Contato</h1>
                         <h2>por Daniel Santos</h2>
-                        <h3 id="direita">Atualizado em 19/Setembro/2022</h3>
+                        <h3 class="direita">Atualizado em 19/Setembro/2022</h3>
                     </hgroup>
                 </header>
 
-                <form method="post" id="fContatos" action="mailto:danielsplira@gmail.com">
+                <form method="post" id="fContatos" action="mailto:danielsplira@gmail.com" oninput="calc_total();">
                     <fieldset id="usuario">
                         <legend> Identificação do Usuário</legend>
                         <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20"
@@ -104,25 +112,36 @@
                             <option value="Belfo Roxo"></option>
                         </datalist>
                     </fieldset>
-                    <fieldset>
-                        <legend id="mensagem"> Mensagem do Usuário</legend>
+                    <fieldset id="mensagen">
+                        <legend > Mensagem do Usuário</legend>
                         <p><label for="cUrg">Grau de Urgência:</label>
-                       Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Max</p>
+                            Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Max</p>
                         <p><label for="cMeg">Mensagem:</label>
-                        <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagen"></textarea></p>
+                            <textarea name="tMsg" id="cMsg" cols="35" rows="5"
+                                placeholder="Deixe aqui sua mensagen"></textarea>
+                        </p>
 
 
                     </fieldset>
                     <fieldset id="pedido">
                         <legend> Quero um Google Glass</legend>
-                        <p><label for="cPed"> Gostaria de adquirir um Google Glass quando disponível</label></p>
-                        <p><label for="cCor"> Cor:</label></p>
-                        <p><label for="cQtd">Quantidade:</label></p>
-                        <p><label for="cTot" Preço Total: R$</label></p>
+                        <p><input type="checkbox" name="tPed" id="cPed" checked>
+                            <label for="cPed"> Gostaria de adquirir um Google Glass quando disponível</label>
+                        </p>
+                        <p><label for="cCor"> Cor:</label>
+                            <input type="color" name="tCor" id="cCor" value="#0000ff">
+                        </p>
+                        <p><label for="cQtd">Quantidade:</label>
+                            <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0">
+                        </p>
+                        <p><label for="cTot">Preço Total: R$</label>
+                            <input type="text" name="tTot" id="cTot" placeholder="Total a apagar" readonly>
+                        </p>
 
 
                     </fieldset>
-                    <img src="img/botao-enviar.png" alt="">
+
+                    <input type="image" name="tEnviar" src="img/botao-enviar.png" alt="">
                 </form>
             </article>
         </section>
